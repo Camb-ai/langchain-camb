@@ -90,9 +90,9 @@ class TestTranslationInput:
             text="Hello",
             source_language=1,
             target_language=2,
-            formality="formal",
+            formality=1,  # 1=formal, 2=informal
         )
-        assert input_data.formality == "formal"
+        assert input_data.formality == 1
 
 
 class TestTranscriptionInput:
